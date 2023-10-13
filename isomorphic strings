@@ -1,0 +1,12 @@
+# Time Complexity : O(n)
+class Solution(object):
+    def isIsomorphic(self, x, y):
+        m1 = []
+        m2 = []
+        for idx in x:
+            m1.append(x.index(idx))
+        for idx in y:
+            m2.append(y.index(idx))
+        if m1 == m2:
+            return True
+        return False
